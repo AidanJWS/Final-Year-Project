@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: #000000;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); 
+    padding: 0px;
+}
+
+nav button {
+    background-color: #d3d3d3;
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+nav button:hover {
+    background-color: #fff;
+    color: darkgrey;
+}
+
+header {
+    text-align: center;
+}
+
+table.addbook{
+    margin-left: auto;
+    margin-right: auto;
+    width: 750px;
+    border:1px solid;
+}
+
+td{
+    border: 1px solid;
+    height: 70px;
+    text-align: center;
+    width: 375px;
+    
+}
+p.middle {
+    text-align: center;
+}
+button.add-button {
+    width: 150px;
+    height: 50px;
+}
+
+button.checkout-button {
+
+}
+
+button.place-on-hold-button {
+
+}
+
+button.remove-button {
+
+}
+
+button.edit-button {
+
+}
+
+button.confirm-button {
+
+}

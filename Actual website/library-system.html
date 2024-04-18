@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<title>Library Management System</title>
+<body>
+	
+
+    <form id ="upload">
+	<label for="file">File to upload</label>
+	<input type="file" id="file" accept=".json">
+	<button type="submit">Upload</button> 
+	</form>
+
+    <header>
+        <p><h1>Library Management System</h1></p>
+    </header>
+
+	<nav>
+        <button onclick="loadContent('home')">Home</button>
+        <button onclick="loadContent('addBook')">Add Book</button>
+        <button onclick="loadContent('removeBook')">Remove Book</button>
+        <button onclick="loadContent('editBookDetails')">Edit Book Details</button>
+    </nav>
+
+    <div id="home" class="section">
+        <p>This is the home page. You can navigate to other sections using the buttons above.</p>
+        <input type="text" id="search" placeholder="Search by title, author, genre...">
+        <p><button class="checkout-button">Checkout</button><button class="place-on-hold-button">Place on Hold</button></p>
+    </div>
+
+    <div id="addBook" class="section" style="display: none;">
+        <br></br>
+        <form id="addBookForm">
+            <table class="addbook">
+                <tr>
+                    <td>Title:</td>
+                    <td><input type="text" id="title" placeholder="Enter here" required></td>
+                </tr>
+                <tr>
+                    <td>Author:</td>
+                    <td><input type="text" id="author"placeholder="Enter here" required></td>
+                </tr>
+                <tr>
+                    <td>ISBN:</td>
+                    <td><input type="text" id="isbn"placeholder="Enter here" required></td>
+                </tr>
+                <tr>
+                    <td>Genre:</td>
+                    <td><input type="text" id="genre"placeholder="Enter here" required></td>
+                </tr>
+                <tr>
+                    <td>Published Year:</td>
+                    <td>
+                        <select>
+                            <option value="2024">2024</option>
+                            <option value="2023">2023</option>
+                            <option value="2022">2022</option>
+                            <option value="2021">2021</option>
+                            <option value="2020">2020</option>
+                            <option value="2019">2019</option>
+                            <option value="2018">2018</option>
+                            <option value="2017">2017</option>
+                            <option value="2016">2016</option>
+                            <option value="2015">2015</option>
+                            <option value="2014">2014</option>
+                            <option value="2013">2013</option>
+                            <option value="2012">2012</option>
+                            <option value="2011">2011</option>
+                            <option value="2010">2010</option>
+                            <option value="2009">2009</option>
+                            <option value="2008">2008</option>
+                            <option value="2007">2007</option>
+                            <option value="2006">2006</option>
+                            <option value="2005">2005</option>
+                            <option value="2004">2004</option>
+                            <option value="2003">2003</option>
+                            <option value="2002">2002</option>
+                            <option value="2001">2001</option>
+                            <option value="2000">2000</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Status</td>
+                    <td>
+                        <select>
+                            <option value="Available">Available</option>
+                        </select>
+                    </td>
+                </tr>
+
+            </table>
+        </form>
+        <p class="middle"><button class="add-button">Add Book</button></p>
+    </div>
+
+    <div id="removeBook" class="section" style="display: none;">
+
+        <br></br>
+        <form>
+            <table class="addbook">
+                <tr>
+                    <td>Title:</td>
+                    <td><input type="text" placeholder="Enter here"></td>
+                </tr>
+                <tr>
+                    <td>Author:</td>
+                    <td><input type="text" placeholder="Enter here"></td>
+                </tr>
+                <tr>
+                    <td>ISBN:</td>
+                    <td><input type="text" placeholder="Enter here"></td>
+                </tr>
+                <tr>
+                    <td>Genre:</td>
+                    <td><input type="text" placeholder="Enter here"></td>
+                </tr>
+                <tr>
+                    <td>Published Year:</td>
+                    <td>
+                        <select>
+                            <option value="2024">2024</option>
+                            <option value="2023">2023</option>
+                            <option value="2022">2022</option>
+                            <option value="2021">2021</option>
+                            <option value="2020">2020</option>
+                            <option value="2019">2019</option>
+                            <option value="2018">2018</option>
+                            <option value="2017">2017</option>
+                            <option value="2016">2016</option>
+                            <option value="2015">2015</option>
+                            <option value="2014">2014</option>
+                            <option value="2013">2013</option>
+                            <option value="2012">2012</option>
+                            <option value="2011">2011</option>
+                            <option value="2010">2010</option>
+                            <option value="2009">2009</option>
+                            <option value="2008">2008</option>
+                            <option value="2007">2007</option>
+                            <option value="2006">2006</option>
+                            <option value="2005">2005</option>
+                            <option value="2004">2004</option>
+                            <option value="2003">2003</option>
+                            <option value="2002">2002</option>
+                            <option value="2001">2001</option>
+                            <option value="2000">2000</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Status</td>
+                    <td>
+                        <select>
+                            <option value="Available">Available</option>
+                            <option value="Checked Out">Checked Out</option>
+                        </select>
+                    </td>
+                </tr>
+
+            </table>
+        </form>
+        <p class="middle"><button class="remove-button">Remove Book</button></p>
+    </div>
+
+    <div id="editBookDetails" class="section" style="display: none;">
+        <br></br>
+        <form>
+            <table class="addbook">
+                <tr>
+                    <td>Title:</td>
+                    <td><input type="text" placeholder="Enter here"></td>
+                </tr>
+                <tr>
+                    <td>Author:</td>
+                    <td><input type="text" placeholder="Enter here"></td>
+                </tr>
+                <tr>
+                    <td>ISBN:</td>
+                    <td><input type="text" placeholder="Enter here"></td>
+                </tr>
+                <tr>
+                    <td>Genre:</td>
+                    <td><input type="text" placeholder="Enter here"></td>
+                </tr>
+                <tr>
+                    <td>Published Year:</td>
+                    <td>
+                        <select>
+                            <option value="2024">2024</option>
+                            <option value="2023">2023</option>
+                            <option value="2022">2022</option>
+                            <option value="2021">2021</option>
+                            <option value="2020">2020</option>
+                            <option value="2019">2019</option>
+                            <option value="2018">2018</option>
+                            <option value="2017">2017</option>
+                            <option value="2016">2016</option>
+                            <option value="2015">2015</option>
+                            <option value="2014">2014</option>
+                            <option value="2013">2013</option>
+                            <option value="2012">2012</option>
+                            <option value="2011">2011</option>
+                            <option value="2010">2010</option>
+                            <option value="2009">2009</option>
+                            <option value="2008">2008</option>
+                            <option value="2007">2007</option>
+                            <option value="2006">2006</option>
+                            <option value="2005">2005</option>
+                            <option value="2004">2004</option>
+                            <option value="2003">2003</option>
+                            <option value="2002">2002</option>
+                            <option value="2001">2001</option>
+                            <option value="2000">2000</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Status</td>
+                    <td>
+                        <select>
+                            <option value="Available">Available</option>
+                            <option value="Checked Out">Checked Out</option>
+                        </select>
+                    </td>
+                </tr>
+
+            </table>
+        </form>
+        <p class="middle"><button class="edit-button">Edit</button><button class="confirm-button">Confirm</button></p>
+    </div>
+
+
+    <div id="bookList"></div>
+    <script src="javascript.js"></script>
+</body>
+</html>

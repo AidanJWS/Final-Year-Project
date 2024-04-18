@@ -1,0 +1,142 @@
+{
+  "books": [
+    {
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "isbn": "978-0743273565",
+      "genre": "Classic",
+      "published_year": 1925,
+      "Status": "Checked Out"
+    },
+    {
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "isbn": "978-0061120084",
+      "genre": "Fiction",
+      "published_year": 1960,
+      "Status": "Available"
+    },
+    {
+      "title": "1984",
+      "author": "George Orwell",
+      "isbn": "978-0451524935",
+      "genre": "Dystopian",
+      "published_year": 1949,
+      "Status": "Available"
+    },
+    {
+      "title": "The Hitchhiker's Guide to the Galaxy",
+      "author": "Douglas Adams",
+      "isbn": "978-0345391803",
+      "genre": "Science Fiction",
+      "published_year": 1979,
+      "Status": "Checked Out"
+    },
+    {
+      "title": "Harry Potter and the Sorcerer's Stone",
+      "author": "J.K. Rowling",
+      "isbn": "978-0590353427",
+      "genre": "Fantasy",
+      "published_year": 1997,
+      "Status": "Available"
+    },
+    {
+      "title": "Harry Potter and the Chamber of Secrets",
+      "author": "J.K. Rowling",
+      "isbn": "978-0439064873",
+      "genre": "Fantasy",
+      "published_year": 1998,
+      "Status": "Available"
+    },
+    {
+      "title": "Harry Potter and the Prisoner of Azkaban",
+      "author": "J.K. Rowling",
+      "isbn": "978-0439136365",
+      "genre": "Fantasy",
+      "published_year": 1999,
+      "Status": "Available"
+    },
+    {
+      "title": "Harry Potter and the Goblet of Fire",
+      "author": "J.K. Rowling",
+      "isbn": "978-0439139595",
+      "genre": "Fantasy",
+      "published_year": 2000,
+      "Status": "Checked Out"
+    },
+    {
+      "title": "Harry Potter and the Order of the Phoenix",
+      "author": "J.K. Rowling",
+      "isbn": "978-0439358071",
+      "genre": "Fantasy",
+      "published_year": 2003,
+      "Status": "Available"
+    },
+    {
+      "title": "Harry Potter and the Half-Blood Prince",
+      "author": "J.K. Rowling",
+      "isbn": "978-0439785969",
+      "genre": "Fantasy",
+      "published_year": 2005,
+      "Status": "Checked Out"
+    },
+    {
+      "title": "Harry Potter and the Deathly Hallows",
+      "author": "J.K. Rowling",
+      "isbn": "978-0545139700",
+      "genre": "Fantasy",
+      "published_year": 2007,
+      "Status": "Checked Out"
+    },
+    {
+      "title": "The Maze Runner",
+      "author": "James Dashner",
+      "isbn": "978-0385737951",
+      "genre": "Science Fiction",
+      "published_year": 2009,
+      "Status": "Available"
+    },
+    {
+      "title": "The Scorch Trials",
+      "author": "James Dashner",
+      "isbn": "978-0385738750",
+      "genre": "Science Fiction",
+      "published_year": 2010,
+      "Status": "Checked Out"
+    },
+    {
+      "title": "The Death Cure",
+      "author": "James Dashner",
+      "isbn": "978-0385738781",
+      "genre": "Science Fiction",
+      "published_year": 2011,
+      "Status": "Available"
+    },
+    {
+      "title": "The Hunger Games",
+      "author": "Suzanne Collins",
+      "isbn": "978-0439023481",
+      "genre": "Dystopian",
+      "published_year": 2008,
+      "Status": "Available"
+    },
+    {
+      "title": "Catching Fire",
+      "author": "Suzanne Collins",
+      "isbn": "978-0439023498",
+      "genre": "Dystopian",
+      "published_year": 2009,
+      "Status": "Available"
+    },
+    {
+      "title": "Mockingjay",
+      "author": "Suzanne Collins",
+      "isbn": "978-0439023511",
+      "genre": "Dystopian",
+      "published_year": 2010,
+      "Status": "Checked Out"
+    }
+    
+  ]
+}
+
